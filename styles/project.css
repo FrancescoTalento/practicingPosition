@@ -1,0 +1,219 @@
+@import "./style.css";
+
+.proj1-1{
+    padding-top: 100px;
+    background: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+projDivEspecial{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.proj1-1 h2{
+    position: relative;
+    bottom: -8%;
+        font-size: 215px;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #E9E3D9;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    line-height: 1;
+    font-family:"Cabin",sans-serif;
+    color: #2A2A2A;
+    align-self: flex-start;
+}
+
+.proj1-1 img{
+    position: relative;
+    z-index: 10;
+}
+.proj1-1 .proj2-1{
+    
+    position:absolute;
+    margin-top: -100px;
+    
+
+    z-index: 100;
+    align-self: flex-start;
+    color: white;
+    transition:.8s;
+    background: #D6A04C;
+    padding: 30px;
+    padding-right: 50px;
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 800px;
+}
+.proj2-1:hover{
+    background-color: #1E1E1E;
+}
+
+.proj2-1:hover  .proj3-1 h3{
+    color: #D6A04C;
+}
+
+.proj2-1:hover  a{
+    background-color: #D6A04C;
+}
+
+.proj2-1 a{
+    
+    position: relative;
+    padding-right: 40px;
+        border: 0;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+
+    transition: 0.8s;
+}
+
+.proj2-1 a::after{
+    content: "";
+    position: absolute;
+    display: block;
+
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon/whiteRightArrow.png);
+    background-repeat: no-repeat;
+   
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+
+.proj3-1{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 450px;
+}
+.proj3-1 h3{
+    font-size: 32px;
+        font-family: "Cabin", sans-serif;
+    color: white;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+
+    transition: 0.8s;
+    
+}
+
+
+
+.exPro{
+    padding: 120px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+}
+
+.exPro1-1{
+    border:1px solid #4B4B4B;
+    padding: 40px;
+
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    min-width: 68%;
+    transition: 1s;
+}
+.exPro2-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vw;
+    transition: 0.8s;
+}
+
+.exPro2-1 p:first-of-type{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.exPro2-1 h3{
+    transition: 0.8s;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-family: "Cabin",sans-serif;
+}
+
+
+
+.exProTxt{
+    max-width: 450px;
+}
+.exProTxt p:last-of-type{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Questrial",sans-serif;
+
+}
+
+.exPro2-1 > a{
+    position: relative;
+    flex-grow: 1;
+    background: rgba(255,255,255,0.1);
+    width: 60px;
+    height: 60px;
+    line-height: 65px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.exPro2-1 a::after{
+    transition: 0.8s;
+    content: "";
+    position:absolute;
+    width: 50px;
+    height: 50px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    background-image: url(../img/icon/whiteRightArrow.png);
+}
+
+.exPro1-1:hover{
+    background-color: rgb(49, 43, 43); 
+}
+.exPro1-1:hover h3{
+    color: #D6A04C;
+}
+
+.exPro1-1:hover a{
+    background-color: #D6A04C;
+}

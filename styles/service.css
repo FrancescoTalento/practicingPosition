@@ -1,0 +1,160 @@
+@import "./style.css";
+
+.secService{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+.divService img{
+    width: 420px;
+    height: 360px;
+}
+
+.secService{
+
+}
+
+
+.divService h2{
+    align-self: flex-start;
+        color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-size: 44px;
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 21px;
+    align-items: flex-start;
+
+}
+
+.ser1-2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.ser1-2 div{
+    transition: 1s;
+}
+
+.ser2-1,
+.ser2-2,
+.ser2-3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   background-blend-mode: multiply;
+}
+.ser2-1:hover,
+.ser2-2:hover,
+.ser2-3:hover{
+    transform: translateY(40px);
+
+}
+.ser2-1 > a,
+.ser2-2 > a,
+.ser2-3 > a{
+    transition: 0.8s;
+    text-decoration: none;
+    color: #E9E3D9;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+.ser2-1:hover > a,
+.ser2-2:hover > a,
+.ser2-3:hover > a{
+    color: #D6A04C;
+}
+.ser2-1 > p,
+.ser2-2 > p,
+.ser2-3 > p{
+    transition: 0.8s;
+    font-family: "Questrial",sans-serif;
+    color: #E9E3D9;
+    margin-bottom: 24px;
+    font-size: 14px;
+    text-transform: uppercase; 
+}
+
+.ser2-1:hover > p,
+.ser2-2:hover > p,
+.ser2-3:hover > p{
+    color: #8b8b8b;
+}
+
+.serv3-1,
+.serv3-2,
+.serv3-3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.serv3-1 .overlay,
+.serv3-2 .overlay,
+.serv3-3 .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+    
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0;
+}
+
+.ser2-1:hover .serv3-1 .overlay,
+.ser2-2:hover .serv3-2 .overlay,
+.ser2-3:hover .serv3-3 .overlay{
+    opacity: 1;
+}
+
+
+.serv3-1 a,
+.serv3-2 a,
+.serv3-3 a {
+    transition: 0.8s;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: white; 
+  border-radius: 50%; 
+  z-index: 10; 
+  opacity: 0;
+}
+
+.serv3-1 a::after,
+.serv3-2 a::after,
+.serv3-3 a::after {
+    content: "";
+  background-image: url('../img/icon/rightArrow.png'); /* seta no meio */
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+
+.ser2-1:hover .serv3-1 a,
+.ser2-2:hover .serv3-2 a,
+.ser2-3:hover .serv3-3 a
+{
+    opacity: 1;
+}

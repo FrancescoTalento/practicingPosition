@@ -1,0 +1,612 @@
+@import "./style.css";
+
+
+header {
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    overflow-y: hidden;
+
+}
+
+.meio_txt {
+    margin-bottom: 10%;
+}
+
+.meio_txt .linksHeader {
+    text-decoration: none;
+    color: white;
+    text-transform: none;
+}
+
+
+.containerBlogDetails{
+    display: flex;
+        justify-content: center;
+        margin: 10vh 0vh;
+        flex-wrap: wrap;
+        gap: 20px;
+}
+/* DETALHES BLOG */
+
+.mainDetails{
+    max-width: 750px;
+        margin-bottom: 50px;
+}
+
+.blogDetails1-1{
+    padding-top: 26px;
+}
+.blogDetails1-1 h2{
+    font-size: 24px;
+        margin-bottom: 15px;
+        font-family: "Cabin",
+            sans-serif;
+        color: white;
+}
+
+.mainBlogLista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+}
+.mainBlogLista a{
+    text-decoration: none;
+}
+.mainBlogLista li i {
+    color: #D6A04C;
+    text-decoration: none;
+    transition: .4s;
+    font-family: "Questrial",
+        sans-serif;
+    font-size: 14px;
+}
+
+.mainBlogLista li i::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    background-image: url(../img/blog/icons/iconUser.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mainBlogLista li:last-of-type i::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    background-image: url(../img/blog/icons/commentIcon.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.blogDetails1-1 p{
+    color: white;
+    margin: 20px 0px;
+    font-size:16px;
+    line-height: 1.4;
+}
+
+.blogDetails1-2{
+    background-color: rgba(130, 139, 178, 0.1);
+    margin: 5px 0px;
+    padding: 30px;
+}
+.blogDetails1-3{
+    background-color: white;
+    padding: 25px;
+    color: #888888;
+    font-style: italic;
+    line-height: 1.733;
+}
+
+.blogDetails2-1{
+    padding-top:15px;
+    padding-bottom: 30px;
+    border-top: 1px solid #f0e9ff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+
+    border-bottom: 1px solid white;
+}
+
+.blogDetails2-1 p{
+    color: #fff;
+    font-size: 14px;
+    margin: 0px;
+}
+.blogDetails2-2 p::before {
+    content: "";
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+  
+
+    background-image: url(../img/blog/details/coracaoIcone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    
+    vertical-align: middle;
+    
+}
+
+.blogDetails2-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blogDetails2-2 img{
+    width: 25px;
+}
+.blogDetails2-2 img:hover{
+    fill: #D6A04C;
+}
+
+.blogDetails2-2 ul{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.blogDetails2-3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogDetails2-3Container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.blogDetails2-3-1Txt{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.blogDetails2-3-1Txt p{
+        color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.blogDetails2-3-1Txt h4{
+        font-family: "Cabin", sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    transition: 1s;
+}
+
+.blogDetails2-3-1Txt .rightPDetails,
+.blogDetails2-3-1Txt .rightH4Details{
+    text-align: end;
+}
+
+.blogDetails2-3Img{
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.blogDetails2-3Img:hover a{
+    background-color: #2a2a2a8c;
+
+}
+
+.blogDetails2-3Img:hover a::after{
+    opacity: 1;
+}
+
+.blogDetails2-3-1Txt h4:hover{
+    color: #D6A04C;
+    cursor: pointer;
+}
+.blogDetails2-3Container:has(h4:hover) .previewADetails,
+.blogDetails2-3Container:has(h4:hover) .nextADetails {
+    background-color: #2a2a2a8c;
+}
+
+.blogDetails2-3Container:has(h4:hover) .previewADetails::after,
+.blogDetails2-3Container:has(h4:hover) .nextADetails::after {
+    opacity: 1;
+}
+
+.blogDetails2-3Img a{
+    transition: 1s;
+
+    width: 100%;
+    height: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+     
+}
+
+.blogDetails2-3Img a::after{
+    transition: 1s;
+
+    content: "";
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: inline-block;
+    
+    width: 30px;
+    height: 30px;
+
+
+    background-image: url(../img/blog/icons/arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.blogDetails2-3Img a.previewADetails::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+
+.blogDetails3-1 {
+    padding: 50px 0px;
+    color: #545454;
+    border-bottom: 1px solid white;
+}
+.blogDetails3-2 {
+    padding: 40px 30px;
+    background-color: white;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.commentTxtDestaque h4{
+    font-family: "Cabin", sans-serif;
+    color: #2A2A2A;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: normal;
+    font-size: 16px;
+    transition: 1s;
+
+}
+
+.commentTxtDestaque h4:hover{
+    color: #D6A04C !important;
+}
+.commentTxtDestaque a{
+    text-decoration: none;
+    transition: .4s;
+}
+
+.blogDetails4-1{
+    padding: 45px 0 90px 0px;
+    border-bottom: 1px solid white;
+}
+.blogDetails4-1 h4{
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-family: "Cabin", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+.blogDetails4-2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blogDetailsComment{
+    display: flex;
+    flex-flow: row;
+    gap: 30px;
+    color: white;
+}
+.blogDetailsComment img{
+    width: 70px;
+    height: 70px;
+}
+.blogDetails4-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blogDetails4-3 p{
+    font-family: "Questrial", sans-serif;
+    
+    color: #fff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.blogDetailsCommentBotoom{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+
+.blogDetailsCommentBotoom a{
+    color: #D6A04C !important;
+    text-decoration: none;
+    transition: .4s;
+}
+.blogDetailsCommentBotoom a:hover{
+    color: #d6a14c9c !important;
+}
+
+.blogDetailsCommentBotoom div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+/* FORMULARIO */
+.blogDetails5-1 h4{
+    color: #fff;
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.form form{
+    margin-top: 50px;
+    margin-right: 0px;
+}
+.form form .ContactSubmit{
+    width: 200px;
+    padding: 20px 24px;
+}
+.form input{
+    padding: 18px;
+}
+
+/* ASIDE DO BLOG */
+
+.asideBlog {
+
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px;
+    gap: 30px;
+}
+
+.asideDiv {
+    padding: 30px;
+    background-color: white;
+}
+
+.aside1-1 {
+    display: flex;
+}
+
+.aside1-1 input {
+
+    border: 1px solid #f0e9ff;
+    height: 40px;
+    font-size: 13px;
+    color: #999999;
+    padding-left: 20px;
+    border-radius: 0;
+    border-right: 0;
+    flex: 1 1 300px;
+
+}
+
+.aside1-1 input:focus {
+    outline: none;
+}
+
+
+.aside1-1 div {
+    position: relative;
+    background-color: #D6A04C;
+
+}
+
+.aside1-1 div button {
+    position: absolute;
+    padding: 0px 20px;
+    left: -70px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #D6A04C;
+    color: white;
+    border: none;
+}
+
+
+/* ASIDE 2 */
+h4.asideTitulo {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 600;
+
+}
+
+h4.asideTitulo::after {
+    content: "";
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #f0e9ff;
+}
+
+.aside2-1 ul li {
+    border-bottom: 1px solid #f0e9ff;
+    transition: all 0.3sease 0s;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    list-style: none;
+
+}
+
+.aside2-1 ul a {
+    text-decoration: none;
+}
+
+.aside2-1 ul li p {
+    font-family: "Questrial", sans-serif;
+    color: #545454;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+
+
+/* ASIDE 3 */
+
+.aside3-1 div.aside3-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+div.aside3-2 a {
+    text-decoration: none;
+}
+
+div.aside3-2 a h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    transition: all 0.3slinear;
+    font-family: "Cabin",
+        sans-serif;
+    color: #2A2A2A;
+}
+
+div.aside3-2 p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0px;
+    font-family: "Cabin",
+        sans-serif;
+    color: #545454;
+}
+
+
+
+/* ASIDE 4 */
+.aside4-2 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.aside4-2 li {}
+
+.aside4-2 li a {
+    text-decoration: none;
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 8px 20px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    transition: all 0.3sease 0s;
+    color: #D6A04C;
+    font-size: 13px;
+    transition: 1s;
+}
+
+.aside4-2 li a:hover {
+    color: white;
+    background-color: #D6A04C;
+}
+
+
+
+
+
+
+/* ASIDE 5 */
+
+.aside5-2 {
+    display: flex;
+    gap: 18px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+
+/* aside 6 */
+
+.aside6-1 input {
+    border: 1px solid #f0e9ff;
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    color: #999999;
+    padding-left: 20px;
+    border-radius: 0;
+    flex: 1 1 300px;
+}
+
+.aside6-1 input:focus {
+    outline: none;
+}
+
+.aside6-1 button {
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 14px 44px;
+    margin-top: 20px;
+    font-family: "Cabin", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #D6A04C;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #D6A04C;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: 0.7s ease;
+}
+
+.aside6-1 button:hover {
+    color: white;
+    background-color: #D6A04C;
+}
+
+

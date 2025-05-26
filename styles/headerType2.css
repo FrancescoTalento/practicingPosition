@@ -1,0 +1,37 @@
+@import "./style.css";
+
+header{
+    height: 50vh;
+    max-height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    /* overflow-y: hidden; */
+    
+}
+
+.meio_txt{
+    margin-bottom: 10%;
+}
+.meio_txt .linksHeader{
+    text-decoration: none;
+    color: white;
+    text-transform: none;
+}
+
+img.redeSocial:hover{
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+
+
+.why1-1{
+    padding: 120px;
+    background: #1E1E1E;
+}
+
+.transicao{
+    padding: 100px;
+    background-color: #0B0016;;
+}

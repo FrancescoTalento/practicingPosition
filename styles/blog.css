@@ -1,0 +1,346 @@
+@import "./style.css";
+
+header {
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    overflow-y: hidden;
+
+}
+
+.meio_txt {
+    margin-bottom: 10%;
+}
+
+.meio_txt .linksHeader {
+    text-decoration: none;
+    color: white;
+    text-transform: none;
+}
+
+
+.containerBlog{
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0vh;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+.mainBlog{
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+.mainBlog div{
+    position: relative;
+}
+.mainBlogLink{
+    background-color: #D6A04C;
+    position:absolute;
+    left: 40px;
+    bottom: -20px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.mainBlogLink h3{
+    font-family: "Questrial",
+        sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 1.2;
+}
+.mainBlogLink p{
+    font-size: 18px;
+    font-family: "Questrial",
+        sans-serif;
+}
+
+.mainBlogContent{
+    padding: 60px 30px 35px 35px;
+    box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+    text-decoration: none;
+    color: white;
+}
+.mainBlogContent a{
+    text-decoration: none;
+}
+.mainBlogContent h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: "Cabin",
+        sans-serif;
+        color: white;
+}
+.mainBlogContent p{
+    color: #fff;
+        margin-bottom: 30px;
+        font-family: "Questrial", sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 15px;
+            font-weight: normal;
+            line-height: 1.4;
+}
+
+.mainBlogLista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+/* .mainBlogLista li:first-of-type::after{
+    content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-image: url(../img/blog/icons/barra-vertical.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        filter: brightness(0) invert(1);
+} */
+
+
+.mainBlogLista li i{
+    color: #D6A04C ;
+        text-decoration: none;
+        transition: .4s;
+        font-family: "Questrial",
+            sans-serif;
+}
+
+.mainBlogContent li:first-of-type i::before{
+    content: "";
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+        background-image: url(../img/blog/icons/iconUser.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+.mainBlogContent li:last-of-type i::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    background-image: url(../img/blog/icons/commentIcon.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* ASIDE DO BLOG */
+
+.asideBlog{
+    
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px;
+    gap: 30px;
+}
+
+.asideDiv{
+    padding: 30px;
+    background-color: white;
+}
+.aside1-1{
+    display: flex;
+}
+
+.aside1-1 input{
+    
+    border:1px solid #f0e9ff;
+    height: 40px;
+        font-size: 13px;
+        color: #999999;
+        padding-left: 20px;
+        border-radius: 0;
+        border-right: 0;
+        flex: 1 1 300px;
+        
+}
+.aside1-1 input:focus{
+    outline: none;
+}
+
+
+.aside1-1 div{
+    position: relative;
+    background-color: #D6A04C;
+    
+}
+.aside1-1 div button{
+    position: absolute;
+    padding: 0px 20px;
+    left: -70px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #D6A04C;
+    color: white;
+    border: none;
+}
+
+
+/* ASIDE 2 */
+h4.asideTitulo{
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: "Cabin",sans-serif;
+    font-weight: 600;
+    
+}
+h4.asideTitulo::after{
+    content: "";
+        display: block;
+        padding-top: 15px;
+        border-bottom: 1px solid #f0e9ff;
+}
+
+.aside2-1 ul li{
+    border-bottom: 1px solid #f0e9ff;
+    transition: all 0.3sease 0s;
+    padding-bottom: 12px;
+    padding-top: 15px;
+    list-style: none;
+    
+}
+
+.aside2-1 ul a{
+    text-decoration: none;
+}
+
+.aside2-1 ul li p{
+    font-family: "Questrial", sans-serif;
+        color: #545454;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: normal;
+        line-height: 1.4;
+        text-decoration: none;
+}
+
+
+
+/* ASIDE 3 */
+
+.aside3-1 div.aside3-2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+div.aside3-2 a{
+    text-decoration: none;
+}
+div.aside3-2 a h3{
+    font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 6px;
+        transition: all 0.3slinear;
+        font-family: "Cabin",
+            sans-serif;
+        color: #2A2A2A ;
+}
+
+div.aside3-2 p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0px;
+        font-family: "Cabin",
+                sans-serif;
+        color: #545454;
+}
+
+
+
+/* ASIDE 4 */
+.aside4-2{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.aside4-2 li{
+    
+}
+.aside4-2 li a{
+    text-decoration: none;
+        border: 1px solid #eeeeee;
+        background: #fff;
+        padding: 8px 20px;
+        margin-bottom: 8px;
+        margin-right: 3px;
+        transition: all 0.3sease 0s;
+        color: #D6A04C;
+        font-size: 13px;
+        transition: 1s;
+}
+.aside4-2 li a:hover{
+    color: white;
+    background-color: #D6A04C;
+}
+
+
+
+/* ASIDE 5 */
+
+.aside5-2{
+    display: flex;
+    gap: 18px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+
+/* aside 6 */
+
+.aside6-1 input{
+    border: 1px solid #f0e9ff;
+    width: 100%;
+        height: 40px;
+        font-size: 13px;
+        color: #999999;
+        padding-left: 20px;
+        border-radius: 0;
+        flex: 1 1 300px;
+}
+
+.aside6-1 input:focus {
+    outline: none;
+}
+
+.aside6-1 button{
+    background: #fff;
+        display: inline-block;
+        width: 100%;
+        padding: 14px 44px;
+        margin-top: 20px;
+        font-family: "Cabin", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        border: 0;
+        border: 1px solid #D6A04C;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #D6A04C;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        transition:0.7s ease;
+}
+.aside6-1 button:hover 
+{
+    color: white;
+    background-color: #D6A04C;
+}

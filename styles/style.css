@@ -1,0 +1,29 @@
+@import "./header.css";
+@import "./menu.css";
+@import "footer.css";
+@import "./animacoes.css";
+@import "./about.css";
+@import "./service.css";
+@import "./project.css";
+@import "./whyUs.css";
+@import "./relato.css";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+
+body{
+   background-color: #0B0016;
+   font-family: "Questrial",
+    sans-serif;
+}
